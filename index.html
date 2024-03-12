@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Mortadelo y Filemón</title>
   </head>
   <body>
-    <div id="app">
-      <h1>TypeScript Sandbox</h1>
+    <div class="root">
+      <h1>Personajes de Mortadelo y Filemón</h1>
+      <div class="filtro">
+        <input type="text" id="input">
+        <button class="boton" id="boton-filtrar">Filtrar</button>
+      </div>
+      <div class="listado-personajes" id="listado-personajes"></div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/listado-personajes/listado-personajes.ts"></script>
   </body>
 </html>
